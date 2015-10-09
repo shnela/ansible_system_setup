@@ -1,0 +1,8 @@
+- name: Install dev applications using pacman
+  pacman: name={{ item }} state=present
+  with_items: "{{ gui_install }}"
+  when: ansible_os_family == "Archlinux"
+
+- name: Copy synaptics configuration (wont'w work with Gnome see arch wiki for synaptics)
+  template:
+      src=50-synaptics.conf.j2 dest=/etc/X11/xorg.conf.d/50-synaptics.conf force=no

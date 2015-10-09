@@ -1,0 +1,14 @@
+---
+
+git_config:
+  user:
+    name: "{{ config.username }}"
+    email: "{{ config.email }}"
+  color:
+    branch: auto
+    diff: auto
+    interactive: auto
+    status: auto
+    ui: auto
+  core:
+    editor: vim

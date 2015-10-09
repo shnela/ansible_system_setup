@@ -1,0 +1,13 @@
+# requires packer from AUR installed
+
+- name: Install additional packer dependencies
+  pacman:
+      name={{ item }} state=present
+  with_items:
+    - jshon
+
+- name: Install aur packages using pacman
+  packer:
+      name={{ item }} state=present
+  with_items: "{{ aur_packages }}"
+  when: ansible_os_family == "Archlinux"

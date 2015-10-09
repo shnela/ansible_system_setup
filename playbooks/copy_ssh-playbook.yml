@@ -1,0 +1,11 @@
+---
+
+- name: Configuration of my machines
+  hosts: "{{ remote_host }}"
+  vars_files:
+    - ../vars/config.yml
+  vars:
+    - ssh_key: "{{ '~/.ssh/' + config.hostname + '_key.pub'}}"
+  tasks:
+    - name: Append my public key to remote host
+      lineinfile: dest=~/.ssh/authorized_keys state=present line="{{ lookup('file', ssh_key) }}"

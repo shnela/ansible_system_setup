@@ -1,0 +1,2 @@
+ansible-playbook ./playbooks/copy_ssh-playbook.yml  --extra-vars "remote_host=" --ask-pass
+ansible-playbook laptop-playbook.yml --ask-sudo-pass

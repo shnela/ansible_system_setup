@@ -1,0 +1,18 @@
+Section "InputClass"
+        Identifier "touchpad catchall"
+        Driver "synaptics"
+        MatchIsTouchpad "on"
+        Option "TapButton1" "3"
+        Option "TapButton2" "2"
+        Option "TapButton3" "1"
+        Option "VertTwoFingerScroll" "1" 
+        MatchDevicePath "/dev/input/event*"
+EndSection
+
+Section "InputClass"
+        Identifier "touchpad ignore duplicates"
+        MatchIsTouchpad "on"
+        MatchOS "Linux"
+        MatchDevicePath "/dev/input/mouse*"
+        Option "Ignore" "on"
+EndSection
