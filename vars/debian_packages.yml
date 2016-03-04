@@ -1,0 +1,6 @@
+---
+
+# debian_install:
+
+srv_install:
+  - apache2

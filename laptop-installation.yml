@@ -1,12 +1,12 @@
 ---
 
-- name: Configuration of my machines
+- name: Configuration of my laptop
   hosts: laptops
   user: kushner
   vars_files:
     - vars/config.yml
-    - vars/packages.yml
-    - vars/gitconfig.yml
+    - vars/common_packages.yml
+    - vars/arch_packages.yml
   tasks:
     - debug: msg={{ansible_os_family}}
   roles:

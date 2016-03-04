@@ -1,0 +1,27 @@
+---
+
+common_install:
+  # utils
+  - nmap
+  - sudo
+  - sed
+  - vim
+  - wget
+  - htop
+  # dev
+  - gcc
+  - clang
+  - git
+  - make
+    #  - jre7-openjdk-headless
+    #  - python2
+    #  - python2-pip
+  - python
+  - python-pip
+  - tmux
+    #  - mysql
+  - postgresql
+
+pip_install:
+  - django
+  - wirtualenvwrapper

@@ -1,13 +1,13 @@
 - name: Install dev applications using apt
   apt:
       name={{ item }} state=present
-  with_items: "{{ dev_install }}"
+  with_items: "{{ common_install }}"
   when: ansible_os_family == "Debian"
 
 - name: Install dev applications using pacman
   pacman:
       name={{ item }} state=present
-  with_items: "{{ dev_install }}"
+  with_items: "{{ common_install }}"
   when: ansible_os_family == "Archlinux"
 
 - name: Copy vim configuration

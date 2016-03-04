@@ -1,0 +1,16 @@
+---
+
+- name: Configuration of my machines
+  hosts: laptops
+  user: kushner
+  vars_files:
+    - vars/config.yml
+    - vars/apt_packages.yml
+    - vars/gitconfig.yml
+  tasks:
+    - debug: msg={{ansible_os_family}}
+  roles:
+    - { role: generate_ssh, sudo: false }
+    - { role: dev-packages, sudo: true }
+    - { role: gui-packages, sudo: true }
+    - { role: aur-packages, sudo: true, when: ansible_os_family == "Archlinux"}

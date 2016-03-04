@@ -1,0 +1,42 @@
+---
+
+#arch_install:
+
+gui_install:
+  # gnome
+  - gdm
+  - gnome-disk-utility
+  - gnome-terminal
+  - gnome-backgrounds
+  - gnome-control-center
+  - nautilus
+  # dev
+  - pgadmin3
+  # gnome-extra
+  - gedit
+  - gnome-nettool
+  - alacarte
+  - networkmanager
+  - networkmanager-openvpn
+  - network-manager-applet
+  - gconf-editor
+  # system temperature
+  - lm_sensors
+  - rrdtool
+  # entertainment
+  - vlc
+  # other
+  - xf86-input-synaptics
+
+aur_packages:
+  # dev
+  - arduino
+  - pycharm-community
+    #  - simplecv
+  # entertainment
+  - spotify
+  # gnome
+  - gnome-session-properties
+  # other
+  - google-chrome
+  - dropbox

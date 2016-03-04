@@ -1,9 +1,9 @@
-## Configure remote host
-`ansible-playbook laptop-playbook.yml --ask-sudo-pass`
+On Ubuntu/Debian servers run:
+`ansible-playbook server-installation.yml`
 
-On Arch/Debian machines install:
- * Dev packages
- * 
 For Arch linux:
- * Gnome packages
- * Necessary AUR packages
+`ansible-playbook laptop-installation.yml`
+
+TODO:
+* split uncompatible items from common_install to arch_install and debian_install
+* debug server run (probably won't work)
