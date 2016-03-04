@@ -18,6 +18,12 @@ gui_install:
   - network-manager-applet
   - xf86-input-synaptics
   - vlc
+  - libmtp
+  - mtpfs
+  - alacarte
+  # system temperature
+  - lm_sensors
+  - rrdtool
 
 aur_packages:
   - arduino
@@ -25,6 +31,10 @@ aur_packages:
   - google-chrome
   - spotify
   - pycharm-community
+  - simplecv
+  - jmtpfs
+  - dropbox
+  - navicat-lite
 
 dev_install:
   # utils
@@ -33,19 +43,19 @@ dev_install:
   - sed
   - vim
   - wget
-  - unrar
+    #  - unrar
   - htop
   # dev
   - gcc
   - git
-  - jre7-openjdk-headless
+    #  - jre7-openjdk-headless
   - make
-  - python2
-  - python2-pip
+    #  - python2
+    #  - python2-pip
   - python
   - python-pip
   - tmux
-  - mysql
+    #  - mysql
   - postgresql
 
 pip_install:
