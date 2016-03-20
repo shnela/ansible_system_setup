@@ -21,6 +21,8 @@ common_install:
   - tmux
     #  - mysql
   - postgresql
+  - ghc
+  - cabal-install
 
 pip_install:
   - django
