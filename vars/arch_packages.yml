@@ -40,3 +40,4 @@ aur_packages:
   # other
   - google-chrome
   - dropbox
+  - vundle
