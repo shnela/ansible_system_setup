@@ -1,10 +1,26 @@
+" vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/budnle/vundle/
+call vundle#rc()
+
+" vundle plugins
+Plugin 'Valloric/YouCompleteMe'
+
+filetype plugin indent on
+
+" rest of vimrc file
+
+" wildmenu (show autocomplete options)
+set wildmenu
+
 "search
 set hlsearch
 
 "colours
 syntax on
 "colorscheme blue
-colorscheme darkblue
+" colorscheme darkblue
 
 
 "indent

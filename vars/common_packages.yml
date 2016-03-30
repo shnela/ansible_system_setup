@@ -9,7 +9,6 @@ common_install:
   - wget
   - htop
   # dev
-  - gcc
   - clang
   - lib32-clang # for youcompleteme (vim)
   - git
