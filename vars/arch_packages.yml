@@ -41,3 +41,5 @@ aur_packages:
   - google-chrome
   - dropbox
   - vundle
+  - zabbix-agent
+  - rc-local
